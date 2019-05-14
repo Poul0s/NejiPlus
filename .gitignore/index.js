@@ -35,7 +35,7 @@ const botcn = new Discord.Client
 botcn.login(process.env.TOKENCN)
 var prefixcn = ("/")
 
-botcyb.on("message", message => {
+botcn.on("message", message => {
 var auth = message.author
     if(message.content.startsWith(prefixcn + "report")){
         const reportmember = message.mentions.members.first();
