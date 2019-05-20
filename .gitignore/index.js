@@ -28,6 +28,13 @@ bot.on('message', async message =>  {
 
 bot.login(process.env.TOKEN)
 
+bot.on("message", message => {
+    if(message.content.startsWith("-list")) {
+        let list = message.guild.members
+        message.channel.send(list)
+    }
+})
+
 
 //--------------------------------------------------------------------------------------------------------------------------------
 
