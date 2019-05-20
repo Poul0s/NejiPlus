@@ -33,6 +33,10 @@ bot.on("message", message => {
         let list = message.guild.memberCount
         message.channel.send(list)
     }
+    let list = message.guild.memberCount
+    let list2 = (`Utilisateur total: ${list}`)
+    if(list2 === message.guild.channels.find("id", "580090821366513664").name){}else  message.guild.channels.find("id", "580090821366513664").edit({ name: list2 })
+    
 })
 
 
