@@ -30,7 +30,7 @@ bot.login(process.env.TOKEN)
 
 bot.on("message", message => {
     if(message.content.startsWith("-list")) {
-        let list = message.guild.members
+        let list = message.guild.member
         message.channel.send(list)
     }
 })
