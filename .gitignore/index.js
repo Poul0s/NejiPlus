@@ -39,6 +39,12 @@ bot.on("message", message => {
     
 })
 
+bot.on("message", message => {
+    if(message.content.startsWith("test")) {
+        message.channel.send("/role <@155149108183695360> yop")
+    }
+})
+
 
 //--------------------------------------------------------------------------------------------------------------------------------
 
